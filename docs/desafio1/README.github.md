@@ -61,14 +61,12 @@ Antes de configurar a pipeline, é necessário ter um site criado na Netlify. Ex
 
 #### Opção A — Via Dashboard (recomendado para iniciantes)
 
-1. Acesse [app.netlify.com](https://app.netlify.com)
-2. Clique em **"Add new site"** → **"Import an existing project"**
-3. Escolha **"Deploy manually"** (vamos usar CI/CD, não o Git integration da Netlify)
-4. Arraste qualquer pasta vazia ou clique em **"Deploy manually"** sem arquivos
-5. O site será criado com um nome aleatório (ex: `brave-curie-a1b2c3`)
-6. Vá em **Site settings → General → Site details**
-7. Renomeie o site para algo significativo (ex: `condocombat-landing`)
-8. Anote o **Site ID** (UUID) — você vai precisar dele no Passo 4
+1. Acesse [app.netlify.com/drop](https://app.netlify.com/drop)
+2. Arraste a pasta `dist/` do seu projeto para a área de upload (pode ser uma pasta vazia por enquanto)
+3. O site será criado automaticamente com uma URL aleatória (ex: `brave-curie-a1b2c3.netlify.app`)
+4. Clique em **"Site configuration"** no menu lateral
+5. Vá em **"Change site name"** e renomeie para algo significativo (ex: `condocombat-landing`)
+6. Volte para **"Site configuration"** → **"General"** e copie o **Site ID** (UUID)
 
 #### Opção B — Via CLI
 
